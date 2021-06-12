@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    background: hsl(0, 0%, 95%);
+    overflow: hidden;
+}
+/* float columns side by side*/
+.column{
+    float: left;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.row{
+    margin: 50px 100px;
+}
+
+/*clear floats after the columns */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px){
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+.card1,.card2,.card3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 76px;
+    text-align: center;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 3px;
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 3px;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 15px; 
+    border: none;
+    color: hsl(179, 100%, 13%);
+    padding: 15px 32px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h3{
+    color: hsl(0, 0%, 95%);
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
